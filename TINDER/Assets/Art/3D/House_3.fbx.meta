@@ -1,9 +1,46 @@
 fileFormatVersion: 2
-guid: 48387f16979049442b532d7014410813
+guid: 61c8413d7dc18204a9dcd237dd5cb280
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BackPlanks
+    second: {fileID: -8365888799425033997, guid: f5adae1df7aa0c14c9c3fe8ffac962f4,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Emission
+    second: {fileID: 2100000, guid: 9d0e440d62efeac46a5393b4edd057c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green
+    second: {fileID: 2100000, guid: 9d9284c0bd344924eaa654e3c064178b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handles
+    second: {fileID: -8248527271470293232, guid: f5adae1df7aa0c14c9c3fe8ffac962f4,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Marble
+    second: {fileID: 2100000, guid: f5f3643ca7b890a48bda9d8846f1ea2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red
+    second: {fileID: 2100000, guid: 9abb4ad634cc2fd4c9fbb0d6f8c02745, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TopBar
+    second: {fileID: 2100000, guid: 8ab06dde2000fcb46b7c1fac4f93981d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

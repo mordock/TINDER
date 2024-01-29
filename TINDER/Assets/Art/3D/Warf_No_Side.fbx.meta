@@ -1,40 +1,9 @@
 fileFormatVersion: 2
-guid: 4f00b504b872f4344a898b5176f0a3d2
+guid: 0cfba1993342a5a4ebe5acfd145c072e
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: BackPlanks
-    second: {fileID: 2100000, guid: 2070a932296cc9046b8c592b42d010f2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Blue
-    second: {fileID: 2100000, guid: 31bc31364a2d92746a596feee841c8e4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Green
-    second: {fileID: 2100000, guid: 9d9284c0bd344924eaa654e3c064178b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Handles
-    second: {fileID: -8248527271470293232, guid: f5adae1df7aa0c14c9c3fe8ffac962f4,
-      type: 3}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Marble
-    second: {fileID: 2100000, guid: f5f3643ca7b890a48bda9d8846f1ea2e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: TopBar
-    second: {fileID: 2100000, guid: 8ab06dde2000fcb46b7c1fac4f93981d, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
