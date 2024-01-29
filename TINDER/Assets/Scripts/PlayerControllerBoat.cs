@@ -42,12 +42,16 @@ public class PlayerControllerBoat : MonoBehaviour
     private const string obstacle = "Obstacle";
     [SerializeField]
     private float speedLerp;
+    private RotateBoat boat;
+    private GameManager gm;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         targetRotation = transform.rotation;
         currentSpeed = maxSpeed;
+        boat = GameObject.FindGameObjectWithTag("Boat").GetComponent<RotateBoat>();
+        gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
     void FixedUpdate()
     {
@@ -73,9 +77,10 @@ public class PlayerControllerBoat : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.CompareTag(obstacle))
+        if (col.gameObject.CompareTag(obstacle) && !gm.isHit)
         {
             currentSpeed = currentSpeed / 2;
+            gm.StartHitstunRoutine();
         }
     }
     private void MoveBoat()
@@ -91,12 +96,14 @@ public class PlayerControllerBoat : MonoBehaviour
         {
             Vector3 rowDir = new Vector3(rowIntensity, 0, 1);
             rb.AddForce(rowDir * rowForce, ForceMode.Impulse);
+            if (boat.targetAngle < 45) { boat.targetAngle += 10; }
             StartCoroutine(rowCD(true));
         }
         if (Input.GetKeyDown(KeyCode.D) && canRowR)
         {
             Vector3 rowDir = new Vector3(-rowIntensity, 0, 1);
             rb.AddForce(rowDir * rowForce, ForceMode.Impulse);
+            if (boat.targetAngle > -45) { boat.targetAngle -= 10; }
             StartCoroutine(rowCD(false));
         }
     }
