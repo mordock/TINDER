@@ -10,6 +10,13 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private float chargeSpeed;
     private PlayerControllerBoat pcb;
+    [SerializeField]
+    private MeshRenderer[] boatRenderers;
+    [SerializeField]
+    private float stunDelay;
+    private bool OnOff;
+    [HideInInspector]
+    public bool isHit;
     
     void Start()
     {
@@ -17,7 +24,6 @@ public class GameManager : MonoBehaviour
         pcb = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControllerBoat>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (boostMeter < maxBoost && !pcb.isBoosting)
@@ -30,5 +36,27 @@ public class GameManager : MonoBehaviour
         }
         if(boostMeter > 0.1) { pcb.canBoost = true; }
         else { pcb.canBoost = false; }
+    }
+
+    public void StartHitstunRoutine()
+    {
+        StartCoroutine(Hitstun());
+    }
+
+
+    private IEnumerator Hitstun()
+    {
+        isHit = true;
+        for (int i = 0; i < 20; i++)
+        {
+            yield return new WaitForSeconds(stunDelay);
+            foreach (MeshRenderer mr in boatRenderers)
+            {
+                mr.enabled = OnOff;
+            }
+            if (!OnOff) { OnOff = true; }
+            else { OnOff = false; }
+        }
+        isHit = false;
     }
 }
