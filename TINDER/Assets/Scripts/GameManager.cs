@@ -41,6 +41,9 @@ public class GameManager : MonoBehaviour
     private float saturationTarget;
     private float glitchFrequency;
     private bool canStartGlitchLoop = true;
+    private AudioManager am;
+    private UIManager um;
+    private bool canStartIR = true;
 
     void Start()
     {
@@ -49,6 +52,8 @@ public class GameManager : MonoBehaviour
         postMat.SetFloat("_FadeIntensity", fadeIntensity);
         fadeTarget = fadeIntensity;
         saturationTarget = 1.5f;
+        am = GameObject.FindGameObjectWithTag("am").GetComponent<AudioManager>();
+        um = GameObject.FindGameObjectWithTag("um").GetComponent<UIManager>();
     }
 
     void Update()
@@ -102,6 +107,11 @@ public class GameManager : MonoBehaviour
         {
             fadeTarget = -0.5f;
             LerpDirLight();
+            if (canStartIR)
+            {
+                StartCoroutine(InstructionRoutine());
+                canStartIR = false;
+            }
         }
         if (timer > timeStamps[2])
         {
@@ -126,12 +136,14 @@ public class GameManager : MonoBehaviour
         {
             postMat.SetFloat("_DistortIntensity", distortIntensity);
             postMat.SetFloat("_ChromaticIntensity", chromaticIntensity);
+            am.SetPitch(-2);
         }
         yield return new WaitForSeconds(0.2f);
         if (i == 0)
         {
             postMat.SetFloat("_DistortIntensity", 0);
             postMat.SetFloat("_ChromaticIntensity", 0);
+            am.SetPitch(1);
         }
         StartCoroutine(Glitch());
     }
@@ -159,5 +171,13 @@ public class GameManager : MonoBehaviour
         saturationIntensity = Mathf.Lerp(saturationIntensity, saturationTarget, Time.deltaTime * lightLerpSpeed * 0.2f);
         saturationIntensity = Mathf.Clamp(saturationIntensity, 0, 1);
         postMat.SetFloat("_SaturationIntensity", saturationIntensity);
+    }
+
+    private IEnumerator InstructionRoutine()
+    {
+        yield return new WaitForSeconds(6);
+        um.instruction.enabled = true;
+        yield return new WaitForSeconds(7);
+        um.instruction.enabled = false;
     }
 }
