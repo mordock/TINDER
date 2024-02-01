@@ -9,6 +9,7 @@ TagManager:
   - Obstacle
   - Boat
   - GameManager
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

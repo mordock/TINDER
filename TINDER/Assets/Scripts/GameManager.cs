@@ -17,7 +17,16 @@ public class GameManager : MonoBehaviour
     private bool OnOff;
     [HideInInspector]
     public bool isHit;
-    
+    [SerializeField]
+    private Material postMat;
+    [SerializeField]
+    private float distortIntensity;
+    [SerializeField]
+    private float chromaticIntensity;
+    private float distort;
+    private float chromatic;
+
+
     void Start()
     {
         boostMeter = maxBoost;
@@ -36,14 +45,13 @@ public class GameManager : MonoBehaviour
         }
         if(boostMeter > 0.1) { pcb.canBoost = true; }
         else { pcb.canBoost = false; }
-    }
 
+        PostEffect();
+    }
     public void StartHitstunRoutine()
     {
         StartCoroutine(Hitstun());
     }
-
-
     private IEnumerator Hitstun()
     {
         isHit = true;
@@ -58,5 +66,21 @@ public class GameManager : MonoBehaviour
             else { OnOff = false; }
         }
         isHit = false;
+    }
+
+    private void PostEffect()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            distort = distortIntensity;
+            chromatic = chromaticIntensity; 
+        }
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            distort = 0;
+            chromatic = 0;
+        }
+        postMat.SetFloat("_DistortIntensity", distort);
+        postMat.SetFloat("_ChromaticIntensity", chromatic);
     }
 }
