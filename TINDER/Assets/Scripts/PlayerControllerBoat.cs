@@ -44,6 +44,11 @@ public class PlayerControllerBoat : MonoBehaviour
     private float speedLerp;
     private RotateBoat boat;
     private GameManager gm;
+    [SerializeField]
+    private Oar[] oars;
+    private const string checkpoint = "Checkpoint";
+    [SerializeField]
+    private float speedIncreaseCP;
 
     void Start()
     {
@@ -82,6 +87,11 @@ public class PlayerControllerBoat : MonoBehaviour
             currentSpeed = currentSpeed / 2;
             gm.StartHitstunRoutine();
         }
+
+        if (col.gameObject.CompareTag(checkpoint))
+        {
+            maxSpeed += speedIncreaseCP;
+        }
     }
     private void MoveBoat()
     {
@@ -97,6 +107,7 @@ public class PlayerControllerBoat : MonoBehaviour
             Vector3 rowDir = new Vector3(rowIntensity, 0, 1);
             rb.AddForce(rowDir * rowForce, ForceMode.Impulse);
             if (boat.targetAngle < 45) { boat.targetAngle += 10; }
+            oars[0].Swing();
             StartCoroutine(rowCD(true));
         }
         if (Input.GetKeyDown(KeyCode.D) && canRowR)
@@ -104,6 +115,7 @@ public class PlayerControllerBoat : MonoBehaviour
             Vector3 rowDir = new Vector3(-rowIntensity, 0, 1);
             rb.AddForce(rowDir * rowForce, ForceMode.Impulse);
             if (boat.targetAngle > -45) { boat.targetAngle -= 10; }
+            oars[1].Swing();
             StartCoroutine(rowCD(false));
         }
     }
