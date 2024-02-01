@@ -4,14 +4,24 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    private AudioSource audioSource;
+    [SerializeField]
+    private AudioSource asBackgroundMusic;
+    [SerializeField]
+    private AudioSource asSFX;
+    [SerializeField]
+    private AudioClip splash;
     void Start()
     {
-        audioSource= GetComponent<AudioSource>();
+        asBackgroundMusic = GetComponent<AudioSource>();
     }
 
     public void SetPitch(float pitch)
     {
-        audioSource.pitch = pitch;  
+        asBackgroundMusic.pitch = pitch;  
+    }
+
+    public void PlaySplash()
+    {
+        asSFX.PlayOneShot(splash);
     }
 }

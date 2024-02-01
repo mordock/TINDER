@@ -675,8 +675,9 @@ MonoBehaviour:
   timeStamps:
   - 2
   - 4
+  - 5
+  - 7
   - 8
-  - 12
 --- !u!4 &2103932419
 Transform:
   m_ObjectHideFlags: 0
