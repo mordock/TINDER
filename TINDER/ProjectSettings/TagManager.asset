@@ -9,11 +9,13 @@ TagManager:
   - Obstacle
   - Boat
   - GameManager
+  - Checkpoint
+  - Video
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - VFX
   - Water
   - UI
   - Ground

@@ -22,7 +22,5 @@ public class RotateBoat : MonoBehaviour
         transform.eulerAngles = new Vector3(0, currentAngle, 0);
 
         transform.position = playerref.position + offset;
-
-        Debug.Log(targetAngle);
     }
 }

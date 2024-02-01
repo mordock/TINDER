@@ -4,19 +4,16 @@ using UnityEngine;
 
 public class Oar : MonoBehaviour
 {
-    private Vector3 defaultRot;
-    // Start is called before the first frame update
+    [SerializeField]
+    private Transform oarPoint;
     void Start()
     {
-        defaultRot = transform.rotation.eulerAngles;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E)) {
-            Swing();
-        }
+        transform.position = oarPoint.position;
     }
 
     public void Swing() {
