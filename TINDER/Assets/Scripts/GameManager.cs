@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -44,24 +45,47 @@ public class GameManager : MonoBehaviour
     private AudioManager am;
     private UIManager um;
     private bool canStartIR = true;
+    [SerializeField]
+    private PlayAnimation playAnimation;
+    [SerializeField]
+    private GameObject fire;
+    public float middle;
+    private bool spawnFire = true;
+    [HideInInspector]
+    public bool canZoom;
 
     void Start()
     {
         boostMeter = maxBoost;
         pcb = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControllerBoat>();
         postMat.SetFloat("_FadeIntensity", fadeIntensity);
+        postMat.SetFloat("_SaturationIntensity", 0);
         fadeTarget = fadeIntensity;
         saturationTarget = 1.5f;
         am = GameObject.FindGameObjectWithTag("am").GetComponent<AudioManager>();
         um = GameObject.FindGameObjectWithTag("um").GetComponent<UIManager>();
+        middle = transform.position.x;
     }
 
     void Update()
     {
-        TimeLine();
+        if (pcb.canInput)
+        {
+            TimeLine();
+        }
         HandleBoost();
         LerpFade();
         LerpSaturation();
+        if (Input.GetKeyDown(KeyCode.H) && timer > timeStamps[4])
+        {
+            HugBear();
+            um.instructionEnd.enabled = false;
+            canZoom = true;
+        }
+        if(!pcb.canInput && fadeIntensity >= 1)
+        {
+            EndGame();
+        }
     }
     public void StartHitstunRoutine()
     {
@@ -98,7 +122,7 @@ public class GameManager : MonoBehaviour
     }
     private void TimeLine()
     {
-        timer = Time.time;
+        timer = Time.timeSinceLevelLoad;
         if (timer > timeStamps[0])
         {
             fadeTarget = 0.97f;
@@ -126,6 +150,16 @@ public class GameManager : MonoBehaviour
         {
             glitchFrequency = 0.5f;
         }
+
+        if(timer > timeStamps[4])
+        {
+            if (spawnFire)
+            {
+                Instantiate(fire);
+                um.instructionEnd.enabled = true;
+                spawnFire = false;
+            }
+        }
     }
 
     private IEnumerator Glitch()
@@ -145,7 +179,10 @@ public class GameManager : MonoBehaviour
             postMat.SetFloat("_ChromaticIntensity", 0);
             am.SetPitch(1);
         }
-        StartCoroutine(Glitch());
+        if (pcb.canInput)
+        {
+            StartCoroutine(Glitch());
+        }
     }
     private void LerpDirLight()
     {
@@ -176,8 +213,26 @@ public class GameManager : MonoBehaviour
     private IEnumerator InstructionRoutine()
     {
         yield return new WaitForSeconds(6);
-        um.instruction.enabled = true;
+        um.instructionBegin.enabled = true;
         yield return new WaitForSeconds(7);
-        um.instruction.enabled = false;
+        um.instructionBegin.enabled = false;
+    }
+
+    private void HugBear()
+    {
+        playAnimation.PlayTriggerAnimation();
+        StartCoroutine(EndRoutine());
+    }
+
+    private IEnumerator EndRoutine()
+    {
+        pcb.canInput = false;
+        yield return new WaitForSeconds(4);
+        fadeTarget = 1.5f;
+    }
+
+    private void EndGame()
+    {
+        SceneManager.LoadScene(0);
     }
 }

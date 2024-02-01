@@ -5,10 +5,12 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    public TextMeshProUGUI instruction;
+    public TextMeshProUGUI instructionBegin;
+    public TextMeshProUGUI instructionEnd;
     void Start()
     {
-        instruction.enabled = false;
+        instructionBegin.enabled = false;
+        instructionEnd.enabled = false;
     }
 
     // Update is called once per frame
