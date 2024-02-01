@@ -209,13 +209,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.39024332, z: -0, w: 0.9207118}
-  m_LocalPosition: {x: 12.75, y: 7.77, z: -2.8}
+  m_LocalRotation: {x: 0.1451044, y: 0.023841994, z: -0.003497623, w: 0.98912287}
+  m_LocalPosition: {x: 0.64, y: 9.07, z: -12.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -45.939, z: 0}
+  m_LocalEulerAnglesHint: {x: 16.692, y: 2.762, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,6 +322,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Warf_No_Side
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0cfba1993342a5a4ebe5acfd145c072e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -462,12 +467,12 @@ PrefabInstance:
     - target: {fileID: 7408825026801439070, guid: 0fe435f7e49efac419e5df7517aa9e59,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7897835690039593956, guid: 0fe435f7e49efac419e5df7517aa9e59,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.44
       objectReference: {fileID: 0}
     - target: {fileID: 7897835690039593956, guid: 0fe435f7e49efac419e5df7517aa9e59,
         type: 3}
@@ -477,7 +482,7 @@ PrefabInstance:
     - target: {fileID: 7897835690039593956, guid: 0fe435f7e49efac419e5df7517aa9e59,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.35
       objectReference: {fileID: 0}
     - target: {fileID: 7897835690039593956, guid: 0fe435f7e49efac419e5df7517aa9e59,
         type: 3}
@@ -581,6 +586,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Warf_No_Side (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0cfba1993342a5a4ebe5acfd145c072e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -772,6 +782,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e52f0a89fc9276e40a4cc4440256443d, type: 3}
+--- !u!1001 &1565269442
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7408825026801439070, guid: 0fe435f7e49efac419e5df7517aa9e59,
+        type: 3}
+      propertyPath: m_Name
+      value: Boat (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897835690039593956, guid: 0fe435f7e49efac419e5df7517aa9e59,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897835690039593956, guid: 0fe435f7e49efac419e5df7517aa9e59,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897835690039593956, guid: 0fe435f7e49efac419e5df7517aa9e59,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897835690039593956, guid: 0fe435f7e49efac419e5df7517aa9e59,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897835690039593956, guid: 0fe435f7e49efac419e5df7517aa9e59,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897835690039593956, guid: 0fe435f7e49efac419e5df7517aa9e59,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897835690039593956, guid: 0fe435f7e49efac419e5df7517aa9e59,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897835690039593956, guid: 0fe435f7e49efac419e5df7517aa9e59,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897835690039593956, guid: 0fe435f7e49efac419e5df7517aa9e59,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897835690039593956, guid: 0fe435f7e49efac419e5df7517aa9e59,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fe435f7e49efac419e5df7517aa9e59, type: 3}
 --- !u!1001 &1806351853
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -853,7 +931,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8f18fdae089a8ec4484afa359e342f49,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -923,6 +1001,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Warf Outer
       objectReference: {fileID: 0}
+    - target: {fileID: 8944051598479904436, guid: c36c9c8d66913704298738091554d6ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -940,6 +1023,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: House_1_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127181740184722916, guid: 45e1e1b04b6559b418ec48725aacffa6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7611935099246610270, guid: 45e1e1b04b6559b418ec48725aacffa6,
         type: 3}
@@ -1059,6 +1147,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Warf_With_Side
       objectReference: {fileID: 0}
+    - target: {fileID: 4476778554964154890, guid: e1e8d1440300c244b85e00ab94771e5b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1127,11 +1220,84 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_2_Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 2077223167313007397, guid: 56967fe2c06712746836be44683c3ae5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56967fe2c06712746836be44683c3ae5, type: 3}
+--- !u!1001 &5966271326753059116
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 475839547136687074, guid: 1e7a2974c29f0664bbfe57cfe7c3316e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 475839547136687074, guid: 1e7a2974c29f0664bbfe57cfe7c3316e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 475839547136687074, guid: 1e7a2974c29f0664bbfe57cfe7c3316e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 475839547136687074, guid: 1e7a2974c29f0664bbfe57cfe7c3316e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 475839547136687074, guid: 1e7a2974c29f0664bbfe57cfe7c3316e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475839547136687074, guid: 1e7a2974c29f0664bbfe57cfe7c3316e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475839547136687074, guid: 1e7a2974c29f0664bbfe57cfe7c3316e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475839547136687074, guid: 1e7a2974c29f0664bbfe57cfe7c3316e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475839547136687074, guid: 1e7a2974c29f0664bbfe57cfe7c3316e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475839547136687074, guid: 1e7a2974c29f0664bbfe57cfe7c3316e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5674707744578781793, guid: 1e7a2974c29f0664bbfe57cfe7c3316e,
+        type: 3}
+      propertyPath: m_Name
+      value: GirlWithBear
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1e7a2974c29f0664bbfe57cfe7c3316e, type: 3}
 --- !u!1001 &6771583143568090376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1144,6 +1310,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Warf Inner
+      objectReference: {fileID: 0}
+    - target: {fileID: 2463201304217641309, guid: 922f40d97ea27344ab48f309028b906c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2982750906956364775, guid: 922f40d97ea27344ab48f309028b906c,
         type: 3}
@@ -1331,6 +1502,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_3_Red
       objectReference: {fileID: 0}
+    - target: {fileID: 4097883564362555794, guid: f6725875d5e6bbf4796b2b3bfb82ed02,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1425,3 +1601,5 @@ SceneRoots:
   - {fileID: 751874193}
   - {fileID: 6771583143568090376}
   - {fileID: 7384238174881679134}
+  - {fileID: 1565269442}
+  - {fileID: 5966271326753059116}
