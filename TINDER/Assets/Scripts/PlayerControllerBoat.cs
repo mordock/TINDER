@@ -151,6 +151,11 @@ public class PlayerControllerBoat : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationForce * Time.fixedDeltaTime);
     }
 
+    private void RotateBack()
+    {
+        transform.rotation = Quaternion.Lerp(transform.rotation, new Quaternion(0, 0, 0, 0), rotationForce/2 * Time.fixedDeltaTime);
+    }
+
     private void HandleBoost()
     {
         if (Input.GetKey(KeyCode.Space) && canBoost)
