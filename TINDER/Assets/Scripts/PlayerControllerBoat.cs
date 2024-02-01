@@ -115,7 +115,7 @@ public class PlayerControllerBoat : MonoBehaviour
             rb.AddForce(rowDir * rowForce, ForceMode.Impulse);
             if (boat.targetAngle < 30) { boat.targetAngle += 10; }
             oars[0].Swing();
-            am.PlaySplash();
+            //am.PlaySplash();
             StartCoroutine(rowCD(true));
         }
         if (Input.GetKeyDown(KeyCode.D) && canRowR)
@@ -124,7 +124,7 @@ public class PlayerControllerBoat : MonoBehaviour
             rb.AddForce(rowDir * rowForce, ForceMode.Impulse);
             if (boat.targetAngle > -30) { boat.targetAngle -= 10; }
             oars[1].Swing();
-            am.PlaySplash();
+            //am.PlaySplash();
             StartCoroutine(rowCD(false));
         }
     }

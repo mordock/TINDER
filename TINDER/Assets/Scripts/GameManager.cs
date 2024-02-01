@@ -213,9 +213,9 @@ public class GameManager : MonoBehaviour
     private IEnumerator InstructionRoutine()
     {
         yield return new WaitForSeconds(6);
-        um.instructionBegin.enabled = true;
+        //um.instructionBegin.enabled = true;
         yield return new WaitForSeconds(7);
-        um.instructionBegin.enabled = false;
+        //um.instructionBegin.enabled = false;
     }
 
     private void HugBear()
