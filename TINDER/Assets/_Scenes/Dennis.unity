@@ -645,6 +645,8 @@ MonoBehaviour:
   isBoosting: 0
   canBoost: 0
   speedLerp: 0.3
+  oars: []
+  speedIncreaseCP: 0
 --- !u!65 &225385126
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1419,6 +1421,13 @@ MonoBehaviour:
   - {fileID: 0}
   stunDelay: 0.1
   isHit: 0
+  postMat: {fileID: 0}
+  distortIntensity: 0
+  chromaticIntensity: 0
+  dirLight: {fileID: 0}
+  targetAngle: 0
+  lightLerpSpeed: 0
+  timeStamps: []
 --- !u!4 &1290422110
 Transform:
   m_ObjectHideFlags: 0
