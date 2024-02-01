@@ -672,6 +672,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4f861e5e56d9844af3d367e6428dae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeStamps:
+  - 2
+  - 4
+  - 5
+  - 7
+  - 8
 --- !u!4 &2103932419
 Transform:
   m_ObjectHideFlags: 0

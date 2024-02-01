@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5186788352701573890}
   - component: {fileID: 633304230089397311}
   - component: {fileID: 1962029034449997404}
+  - component: {fileID: -3046048886505911072}
   m_Layer: 0
   m_Name: Flamewall
   m_TagString: Untagged
@@ -147,3 +148,16 @@ MonoBehaviour:
   m_Property:
     m_Name: SpherePosition
   Target: {fileID: 0}
+--- !u!114 &-3046048886505911072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128941405104469999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01ad9134e3909bc4287e5c12d8da67fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: {x: 0, y: 13, z: 40}

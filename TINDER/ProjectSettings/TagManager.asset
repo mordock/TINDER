@@ -11,6 +11,8 @@ TagManager:
   - GameManager
   - Checkpoint
   - Video
+  - am
+  - um
   layers:
   - Default
   - TransparentFX

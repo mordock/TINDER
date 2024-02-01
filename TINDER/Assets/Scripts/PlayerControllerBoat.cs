@@ -49,6 +49,9 @@ public class PlayerControllerBoat : MonoBehaviour
     private const string checkpoint = "Checkpoint";
     [SerializeField]
     private float speedIncreaseCP;
+    [HideInInspector]
+    public bool canInput = true;
+    private AudioManager am;
 
     void Start()
     {
@@ -57,6 +60,7 @@ public class PlayerControllerBoat : MonoBehaviour
         currentSpeed = maxSpeed;
         boat = GameObject.FindGameObjectWithTag("Boat").GetComponent<RotateBoat>();
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        am = GameObject.FindGameObjectWithTag("am").GetComponent<AudioManager>();
     }
     void FixedUpdate()
     {
@@ -67,8 +71,11 @@ public class PlayerControllerBoat : MonoBehaviour
     void Update()
     {
         GroundCheck();
-        if (isGrounded) { Row(); }
-        HandleBoost();
+        if (canInput)
+        {
+            if (isGrounded) { Row(); }
+            HandleBoost();
+        }
         LerpSpeed();
     }
 
@@ -106,16 +113,18 @@ public class PlayerControllerBoat : MonoBehaviour
         {
             Vector3 rowDir = new Vector3(rowIntensity, 0, 1);
             rb.AddForce(rowDir * rowForce, ForceMode.Impulse);
-            if (boat.targetAngle < 45) { boat.targetAngle += 10; }
+            if (boat.targetAngle < 30) { boat.targetAngle += 10; }
             oars[0].Swing();
+            am.PlaySplash();
             StartCoroutine(rowCD(true));
         }
         if (Input.GetKeyDown(KeyCode.D) && canRowR)
         {
             Vector3 rowDir = new Vector3(-rowIntensity, 0, 1);
             rb.AddForce(rowDir * rowForce, ForceMode.Impulse);
-            if (boat.targetAngle > -45) { boat.targetAngle -= 10; }
+            if (boat.targetAngle > -30) { boat.targetAngle -= 10; }
             oars[1].Swing();
+            am.PlaySplash();
             StartCoroutine(rowCD(false));
         }
     }
@@ -132,7 +141,7 @@ public class PlayerControllerBoat : MonoBehaviour
         }
         yield return new WaitForSeconds(rowDelay);
         if (isLeft)
-        {
+        {     
             canRowL = true;
         }
         if (!isLeft)
@@ -169,7 +178,6 @@ public class PlayerControllerBoat : MonoBehaviour
             isBoosting = false;
         }
     }
-
     private void LerpSpeed()
     {
         currentSpeed = Mathf.Lerp(currentSpeed, maxSpeed, speedLerp * Time.deltaTime);
