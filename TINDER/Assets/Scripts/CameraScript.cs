@@ -26,7 +26,7 @@ public class CameraScript : MonoBehaviour
         if(gm.canZoom)
         {
             Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView, 15, Time.deltaTime * zoomSpeed);
-            currentAngle = Mathf.LerpAngle(currentAngle, 19, Time.deltaTime * zoomSpeed);
+            currentAngle = Mathf.LerpAngle(currentAngle, 22, Time.deltaTime * zoomSpeed);
             transform.eulerAngles = new Vector3(currentAngle, 0, 0);
         }
     }

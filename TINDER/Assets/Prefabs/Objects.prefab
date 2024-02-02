@@ -557,9 +557,12 @@ Transform:
   - {fileID: 3586761105954149452}
   - {fileID: 8190563741458047737}
   - {fileID: 662140593614395768}
+  - {fileID: 5245313401436044828}
+  - {fileID: 553068914142781026}
+  - {fileID: 3640161631528204672}
+  - {fileID: 8270001234072104720}
   - {fileID: 7718690044802572420}
   - {fileID: 4609182371448603660}
-  - {fileID: 5245313401436044828}
   - {fileID: 8201509450299353449}
   - {fileID: 1376207713596051431}
   - {fileID: 1470655156108890148}
@@ -582,8 +585,6 @@ Transform:
   - {fileID: 497349536235608898}
   - {fileID: 6040985690635004340}
   - {fileID: 4463362165307502137}
-  - {fileID: 553068914142781026}
-  - {fileID: 3640161631528204672}
   - {fileID: 1782428165072815137}
   - {fileID: 7949046372606350441}
   - {fileID: 1012027342733963230}
@@ -637,7 +638,6 @@ Transform:
   - {fileID: 6285123460682210587}
   - {fileID: 688089943461692517}
   - {fileID: 6376353918484461241}
-  - {fileID: 8270001234072104720}
   - {fileID: 5123860557804664222}
   - {fileID: 3719753658906835257}
   - {fileID: 1395398543111892951}
@@ -1774,6 +1774,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1898,6 +1903,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cubboard (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2171,6 +2181,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arcade (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2312,6 +2327,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2602,6 +2622,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2726,6 +2751,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2868,6 +2898,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cubboard (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3729,6 +3764,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4001,6 +4041,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arcade (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4142,6 +4187,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cubboard (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4410,6 +4460,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arcade (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4552,6 +4607,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4677,6 +4737,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4801,6 +4866,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cubboard (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5073,6 +5143,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5363,6 +5438,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5487,6 +5567,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cubboard (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5907,6 +5992,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6178,6 +6268,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6467,6 +6562,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7036,6 +7136,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arcade (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7178,6 +7283,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arcade (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7319,6 +7429,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cubboard (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7719,6 +7834,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7843,6 +7963,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7985,6 +8110,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cubboard (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8405,6 +8535,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8529,6 +8664,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cubboard (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8949,6 +9089,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9053,6 +9198,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cubboard (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9178,6 +9328,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9321,6 +9476,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9446,6 +9606,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9570,6 +9735,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9713,6 +9883,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9837,6 +10012,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cubboard (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9963,6 +10143,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10087,6 +10272,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cubboard (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10360,6 +10550,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10484,6 +10679,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10921,6 +11121,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11340,6 +11545,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11464,6 +11674,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cubboard (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11590,6 +11805,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11714,6 +11934,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11856,6 +12081,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12293,6 +12523,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arcade (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12729,6 +12964,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arcade (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12870,6 +13110,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13454,6 +13699,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arcade (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13595,6 +13845,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13884,6 +14139,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14321,6 +14581,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arcade (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14463,6 +14728,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arcade (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14604,6 +14874,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cubboard (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15246,6 +15521,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15370,6 +15650,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cubboard (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15642,6 +15927,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16121,6 +16411,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16392,6 +16687,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cubboard (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16886,6 +17186,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17470,6 +17775,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arcade (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17739,6 +18049,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17996,6 +18311,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arcade (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18137,6 +18457,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18763,6 +19088,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19035,6 +19365,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arcade (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19176,6 +19511,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cubboard (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19728,6 +20068,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cubboard (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19852,6 +20197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cubboard (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e52f0a89fc9276e40a4cc4440256443d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20125,6 +20475,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arcade (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20266,6 +20621,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20597,6 +20957,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arcade (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8f2c94d06e2376b468e36229b4800f1e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

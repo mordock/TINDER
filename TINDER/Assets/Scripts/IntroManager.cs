@@ -13,18 +13,19 @@ public class IntroManager : MonoBehaviour
     private float[] timeStamps;
     private bool isPlaying = true;
     private bool canPause = true;
+    private float length;
     void Start()
     {
         currentScene = SceneManager.GetActiveScene().buildIndex;
         if (currentScene == 1)
         {
             videoPlayer = GameObject.FindGameObjectWithTag("Video").GetComponent<VideoPlayer>();
-            float length = (float)videoPlayer.length;
-            StartCoroutine(VideoRoutine(length));
+            length = (float)videoPlayer.length;
         }
     }
     void Update()
     {
+        Debug.Log(videoTimer);
         if (isPlaying) { videoTimer = (float)videoPlayer.time; }
 
         foreach (float t in timeStamps)
@@ -42,6 +43,10 @@ public class IntroManager : MonoBehaviour
             videoPlayer.Play();
             isPlaying = true;
             StartCoroutine(PauseDelay());
+        }
+
+        if((float)videoPlayer.time >= length - 0.2f) {
+            SceneManager.LoadScene(2);
         }
     }
 

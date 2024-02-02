@@ -54,6 +54,7 @@ public class GameManager : MonoBehaviour
     private bool spawnFire = true;
     [HideInInspector]
     public bool canZoom;
+    private float _maxSpeed;
 
     void Start()
     {
@@ -66,6 +67,8 @@ public class GameManager : MonoBehaviour
         am = GameObject.FindGameObjectWithTag("am").GetComponent<AudioManager>();
         um = GameObject.FindGameObjectWithTag("um").GetComponent<UIManager>();
         middle = transform.position.x;
+        _maxSpeed = pcb.maxSpeed;
+        pcb.maxSpeed = 0;
     }
 
     void Update()
@@ -77,7 +80,7 @@ public class GameManager : MonoBehaviour
         HandleBoost();
         LerpFade();
         LerpSaturation();
-        if (Input.GetKeyDown(KeyCode.H) && timer > timeStamps[4])
+        if (Input.GetKeyDown(KeyCode.H) && timer > timeStamps[6])
         {
             HugBear();
             um.instructionEnd.enabled = false;
@@ -126,23 +129,24 @@ public class GameManager : MonoBehaviour
         timer = Time.timeSinceLevelLoad;
         if (timer > timeStamps[0])
         {
-            fadeTarget = 0.96f;
+            fadeTarget = 0.8f;
         }
 
         if (timer > timeStamps[1])
         {
-            fadeTarget = 0.55f;
+            fadeTarget = 0f;
             if (canStartIR)
             {
                 StartCoroutine(InstructionRoutine());
                 canStartIR = false;
             }
+            saturationTarget = 25f;
+            LerpDirLight();
         }
 
         if (timer > timeStamps[2])
         {
             saturationTarget = 50f;
-            fadeTarget = 0f;
         }
 
         if (timer > timeStamps[3])
@@ -150,23 +154,20 @@ public class GameManager : MonoBehaviour
             Bootlamp.SetActive(false);
             fadeTarget = -100f;
             saturationTarget = 70f;
-
-            LerpDirLight();
-          
         }
         if (timer > timeStamps[4])
         {
-            saturationTarget = 1.5f;
+      //      saturationTarget = 1.5f;
             if (canStartGlitchLoop)
             {
-                glitchFrequency = 0.2f;
+                glitchFrequency = 0.8f;
                 StartCoroutine(Glitch());
                 canStartGlitchLoop = false;
             }
         }
         if (timer > timeStamps[5])
         {
-            glitchFrequency = 0.8f;
+            glitchFrequency = 0.2f;
         }
 
         if(timer > timeStamps[6])
@@ -176,7 +177,7 @@ public class GameManager : MonoBehaviour
                 Instantiate(fire);
                 um.instructionEnd.enabled = true;
                 spawnFire = false;
-                fadeTarget = 1f;
+                pcb.maxSpeed = 0;
             }
         }
     }
@@ -233,6 +234,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(6);
         um.instructionBegin.enabled = true;
+        pcb.maxSpeed = _maxSpeed;
         yield return new WaitForSeconds(7);
         um.instructionBegin.enabled = false;
     }
@@ -247,12 +249,12 @@ public class GameManager : MonoBehaviour
     {
         pcb.canInput = false;
         yield return new WaitForSeconds(4);
-        fadeTarget = 1.5f;
+        EndGame();
     }
 
 
     private void EndGame()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(3);
     }
 }
