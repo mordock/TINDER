@@ -2290,9 +2290,9 @@ MonoBehaviour:
   - 30
   - 60
   - 75
-  - 175
-  - 195
+  - 185
   - 205
+  - 215
   playAnimation: {fileID: 1192218722}
   fire: {fileID: 1128941405104469999, guid: f4fa1e33520e65f4f928444dfb8be0d0, type: 3}
   middle: 0
