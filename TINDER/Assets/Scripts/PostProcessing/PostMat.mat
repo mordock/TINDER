@@ -41,8 +41,8 @@ Material:
     - _Center: 0
     - _ChromaticIntensity: 0
     - _DistortIntensity: 0
-    - _FadeIntensity: 0.7505967
-    - _SaturationIntensity: 0.08202565
+    - _FadeIntensity: 0.99838656
+    - _SaturationIntensity: 0.012504382
     m_Colors:
     - _Color: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

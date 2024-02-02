@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject Bootlamp;
     [SerializeField]
     private float maxBoost;
     private float boostMeter;
@@ -125,39 +126,57 @@ public class GameManager : MonoBehaviour
         timer = Time.timeSinceLevelLoad;
         if (timer > timeStamps[0])
         {
-            fadeTarget = 0.97f;
+            fadeTarget = 0.96f;
         }
+
         if (timer > timeStamps[1])
         {
-            fadeTarget = -0.5f;
-            LerpDirLight();
+            fadeTarget = 0.55f;
             if (canStartIR)
             {
                 StartCoroutine(InstructionRoutine());
                 canStartIR = false;
             }
         }
+
         if (timer > timeStamps[2])
         {
+            saturationTarget = 50f;
+            fadeTarget = 0f;
+        }
+
+        if (timer > timeStamps[3])
+        {
+            Bootlamp.SetActive(false);
+            fadeTarget = -100f;
+            saturationTarget = 70f;
+
+            LerpDirLight();
+          
+        }
+        if (timer > timeStamps[4])
+        {
+            saturationTarget = 1.5f;
             if (canStartGlitchLoop)
             {
-                glitchFrequency = 0.5f;
+                glitchFrequency = 0.2f;
                 StartCoroutine(Glitch());
                 canStartGlitchLoop = false;
             }
         }
-        if (timer > timeStamps[3])
+        if (timer > timeStamps[5])
         {
-            glitchFrequency = 0.5f;
+            glitchFrequency = 0.8f;
         }
 
-        if(timer > timeStamps[4])
+        if(timer > timeStamps[6])
         {
             if (spawnFire)
             {
                 Instantiate(fire);
                 um.instructionEnd.enabled = true;
                 spawnFire = false;
+                fadeTarget = 1f;
             }
         }
     }
@@ -213,9 +232,9 @@ public class GameManager : MonoBehaviour
     private IEnumerator InstructionRoutine()
     {
         yield return new WaitForSeconds(6);
-        //um.instructionBegin.enabled = true;
+        um.instructionBegin.enabled = true;
         yield return new WaitForSeconds(7);
-        //um.instructionBegin.enabled = false;
+        um.instructionBegin.enabled = false;
     }
 
     private void HugBear()
@@ -230,6 +249,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(4);
         fadeTarget = 1.5f;
     }
+
 
     private void EndGame()
     {
