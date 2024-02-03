@@ -212,6 +212,7 @@ MonoBehaviour:
   - {fileID: 361322804}
   speedIncreaseCP: 5
   canInput: 1
+  maxClampSpeed: 30
 --- !u!23 &225385127
 MeshRenderer:
   m_ObjectHideFlags: 0

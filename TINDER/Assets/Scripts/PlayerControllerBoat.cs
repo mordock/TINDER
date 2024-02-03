@@ -52,6 +52,7 @@ public class PlayerControllerBoat : MonoBehaviour
     [HideInInspector]
     public bool canInput = true;
     private AudioManager am;
+    public float maxClampSpeed;
 
     void Start()
     {
@@ -70,6 +71,7 @@ public class PlayerControllerBoat : MonoBehaviour
 
     void Update()
     {
+        rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxClampSpeed);
         GroundCheck();
         if (canInput)
         {
@@ -169,7 +171,7 @@ public class PlayerControllerBoat : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space) && canBoost)
         {
-            boostMultiplier = 2;
+            boostMultiplier = 2f;
             isBoosting = true;
         }
         if (!canBoost)
