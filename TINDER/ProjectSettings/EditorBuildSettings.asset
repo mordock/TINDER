@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/_Scenes/VideoIntro.unity
     guid: 21b97b826c150964ab89c447349d7313
   - enabled: 1
-    path: Assets/_Scenes/Micah.unity
+    path: Assets/_Scenes/PlayScene.unity
     guid: 4fc1365e9b3d06d4eb118db42ed4c65a
   - enabled: 1
     path: Assets/_Scenes/DarkEinde.unity

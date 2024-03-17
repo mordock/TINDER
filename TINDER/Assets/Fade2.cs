@@ -17,7 +17,7 @@ public class Fade2 : MonoBehaviour
         myTMPText.color = startColor;
 
         // Start the FadeIn coroutine after 30 seconds
-        StartCoroutine(FadeInAfterDelay(75f));
+        StartCoroutine(FadeInAfterDelay(30f));
     }
 
     IEnumerator FadeInAfterDelay(float delay)
